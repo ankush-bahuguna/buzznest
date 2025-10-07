@@ -25,11 +25,10 @@
         <span class="brand">Buzznest</span>
       </a>
 
-      <!-- Hamburger menu toggle -->
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon" aria-hidden="true">&#9776;</label>
 
-      <nav class="nav">
+      <nav class="nav" role="navigation" aria-label="Main navigation">
         <a href="#services">Services</a>
         <a href="#packages">Packages</a>
         <a href="#about">About</a>
@@ -54,27 +53,59 @@
         </div>
         <div class="hero-card">
           <h3>Specialized 3-member team</h3>
-          <p>Ankush, Kashish & Shahroz - Automation & Growth | Performance Marketing | Copy & Content</p>
+          <p>Ankush, Kashish &amp; Shahroz - Automation & Growth | Performance Marketing | Copy & Content</p>
           <div class="tiny">We focus individually on automation, performance marketing, and copywriting to deliver measurable growth.</div>
         </div>
       </div>
     </section>
 
+    <!-- SERVICES -->
     <section id="services" class="section services">
       <div class="container">
         <h2>What we do</h2>
         <p class="section-intro">From end-to-end funnel automation to data-driven ad strategies - we engineer growth systems that run 24/7.</p>
+
         <div class="grid services-grid">
-          <article class="card"><h3>Funnel &amp; Automation Setup</h3><p>WhatsApp, Email &amp; SMS automation, n8n workflows, CRM setup and intelligent follow-ups so your funnel never sleeps.</p></article>
-          <article class="card"><h3>Paid Ads &amp; Performance Marketing</h3><p>Meta, Google, LinkedIn &amp; X campaigns with pixel/event tracking, A/B testing and budget optimization to maximize ROI.</p></article>
-          <article class="card"><h3>Content &amp; Copywriting</h3><p>Landing pages, email &amp; WhatsApp copy, ad copy and brand messaging that converts and builds long-term value.</p></article>
-          <article class="card"><h3>Reporting &amp; Analytics Dashboard</h3><p>Real-time dashboards (Looker/Sheets), ROI reporting and custom KPIs so data informs every decision.</p></article>
-          <article class="card"><h3>Multi-Channel Communication</h3><p>WhatsApp broadcasts, SMS &amp; push notifications, opt-in management and segmentation to boost retention and re-engagement.</p></article>
-          <article class="card"><h3>Growth Strategy &amp; Consultation</h3><p>Full audits, funnel mapping, ad+content synergy and 7-day post-delivery optimization support - we build a growth ecosystem.</p></article>
+          <article class="card">
+            <img src="images/funnel.png" alt="Funnel & Automation Setup" class="service-icon">
+            <h3>Funnel &amp; Automation Setup</h3>
+            <p>WhatsApp, Email &amp; SMS automation, n8n workflows, CRM setup and intelligent follow-ups so your funnel never sleeps.</p>
+          </article>
+
+          <article class="card">
+            <img src="images/ads.png" alt="Paid Ads & Performance Marketing" class="service-icon">
+            <h3>Paid Ads &amp; Performance Marketing</h3>
+            <p>Meta, Google, LinkedIn &amp; X campaigns with pixel/event tracking, A/B testing and budget optimization to maximize ROI.</p>
+          </article>
+
+          <article class="card">
+            <img src="images/copywriting.png" alt="Content & Copywriting" class="service-icon">
+            <h3>Content &amp; Copywriting</h3>
+            <p>Landing pages, email &amp; WhatsApp copy, ad copy and brand messaging that converts and builds long-term value.</p>
+          </article>
+
+          <article class="card">
+            <img src="images/analytics.png" alt="Reporting & Analytics Dashboard" class="service-icon">
+            <h3>Reporting &amp; Analytics Dashboard</h3>
+            <p>Real-time dashboards (Looker/Sheets), ROI reporting and custom KPIs so data informs every decision.</p>
+          </article>
+
+          <article class="card">
+            <img src="images/communication.png" alt="Multi-Channel Communication" class="service-icon">
+            <h3>Multi-Channel Communication</h3>
+            <p>WhatsApp broadcasts, SMS &amp; push notifications, opt-in management and segmentation to boost retention and re-engagement.</p>
+          </article>
+
+          <article class="card">
+            <img src="images/strategy.png" alt="Growth Strategy & Consultation" class="service-icon">
+            <h3>Growth Strategy &amp; Consultation</h3>
+            <p>Full audits, funnel mapping, ad+content synergy and 7-day post-delivery optimization support - we build a growth ecosystem.</p>
+          </article>
         </div>
       </div>
     </section>
 
+    <!-- other sections unchanged... -->
     <section id="packages" class="section packages">
       <div class="container">
         <h2>Recommended Packages</h2>
@@ -115,6 +146,7 @@
         </form>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
